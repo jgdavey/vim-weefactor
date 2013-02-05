@@ -1,0 +1,12 @@
+Weefactor is a collection of small Ruby refactorings.
+
+For more information, including a list of available refactorings, see
+the documentation.
+
+Installation
+------------
+
+Use [pathogen][1] or [vundle][2].
+
+[1]: https://github.com/tpope/vim-pathogen
+[2]: https://github.com/gmarik/vundle

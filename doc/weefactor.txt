@@ -1,0 +1,28 @@
+*weefactor.txt*  Micro Ruby refactorings
+
+Author:  Joshua Davey <http://joshuadavey.com/>
+License: Same terms as Vim itself (see |license|)
+
+INTRODUCTION                                    *weefactor*
+
+Weefactor is a collection of small Ruby refactorings.
+
+REFACTORINGS                                    *weefactor-refactorings*
+
+The following commands do as you'd expect. Your cursor must be on the
+line in question for the refactoring to work.
+
+:ExtractRspecLet
+:ConvertStructToClass
+
+MAPPINGS                                        *weefactor-mappings*
+
+You may also want quicker access to the refactorings. For that you can add
+mappings to your vimrc. For example:
+>
+map <leader>l <Plug>ExtractRspecLet
+map <leader>s <Plug>ConvertStructToClass
+>
+Each <Plug> mapping corresponds with the command it maps.
+
+ vim:tw=78:et:ft=help:norl:
