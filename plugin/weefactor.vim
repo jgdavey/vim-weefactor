@@ -33,7 +33,7 @@ endfunction
 function! s:convert_struct_to_class()
   let pos = getpos('.')
   let l = getline('.')
-  let matches = matchlist(l, '\v(class|)\s*<([A-Z]\w*)>\s*[\=\<]\s*Struct\.new\((.+)\)\s*(do)?')
+  let matches = matchlist(l, '\v(class|)\s*<([A-Z]\w*)>\s*[\=\<]\s*Struct\.new[ \(]\s*(%(:\h\w*%(,\s*)?)+)\)?\s*(do)?')
   if empty(matches) == 1
     echo "Can't find struct"
     return
